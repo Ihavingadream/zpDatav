@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="zh-CN">
+<meta name="Keywords" content="中普金服datav">
+<meta name="Description" content="中普金服">
+<title>中普金服</title>
+<script type="text/javascript" src="jquery1.42.min.js"></script>
+<script type="text/javascript" src="jquery.SuperSlide.2.1.1.js"></script>
+</head>
+
+<body>
+	<style type="text/css">
+	/* css 重置 */
+	*{margin:0; padding:0; list-style:none; }
+	body{ background:#fff; font:normal 12px/22px 宋体;}
+	img{ border:none;}
+	html,body{width:100%;height:100%;}
+	/* 本例子css */
+	.slideBox{ width:100%; height:100%; overflow:hidden; position:relative; border:1px solid #ddd;}
+	.slideBox .bd{ position:relative; height:100%; z-index:0;width:100%;}
+	.slideBox .bd li{ zoom:1; vertical-align:middle;}
+	.slideBox .bd img{ width:100%; height:100%; display:block; }
+	::-webkit-scrollbar{display:none;}
+	</style>
+	<div id="slideBox" class="slideBox">
+		<div class="bd">
+			<ul>
+				<li><img src="images/data1.jpg"/></li>
+				<li><img src="images/data2.jpg"/></li>
+				<li><img src="images/data3.jpg"/></li>
+				<li><img src="images/data4.jpg"/></li>
+				<li><img src="images/data5.jpg"/></li>
+			</ul>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		jQuery(".slideBox").slide({mainCell:".bd ul",effect:"leftLoop",easing:"easeInOutExpo",delayTime:800,interTime:10000,autoPlay:true});
+	</script>
+</body>
+</html>
+
+
